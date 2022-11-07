@@ -78,7 +78,7 @@ export default class ChangeGlasses extends Component {
     renderGlasses = () => {
         return data.map((glassesOB, index) => {
             return (
-                <div className='glasses-collection col-2 m-2' key={index}>
+                <div className='glasses-collection col-2' key={index}>
                     <button className={`${style["btn-glass"]}`} onClick={() => {
                         this.setState({
                             id: glassesOB.id,
@@ -88,12 +88,13 @@ export default class ChangeGlasses extends Component {
                             desc: glassesOB.desc
                         })
                     }}>
-                        <img className='w-100' src={glassesOB.url} alt="..." />
+                        <img className='w-100' src={glassesOB.url} />
                     </button>
                 </div>
             )
         })
     }
+
     render() {
         return (
             <div className={`${style["background"]}`}>
@@ -101,7 +102,7 @@ export default class ChangeGlasses extends Component {
                     <div className="row">
                         <div className="col-12 col-sm-12 col-md-12 col-lg-5 mx-auto">
                             <div className={`${style["image"]}`}>
-                                <img className={`${style["glass"]}`} src={this.state.url} alt="..." />
+                                <img className={`${style["glass"]}`} src={this.state.url} alt="." />
                                 <div className={`${style["detail"]}`}>
                                     <h1 className={`${style["name"]}`}>{this.state.name}</h1>
                                     <p className={`${style["description"]}`}>{this.state.desc}</p>
@@ -109,7 +110,7 @@ export default class ChangeGlasses extends Component {
                             </div>
                         </div>
                         <div className="col-12 col-sm-12 col-md-12 col-lg-5 mx-auto">
-                            <img class= "default-model" src="./glassesImage/model.jpg" alt="..." />
+                            <img class= {`${style["default-model"]}`} src="./glassesImage/model.jpg" alt="" />
 
                         </div>
                     </div>
@@ -122,7 +123,6 @@ export default class ChangeGlasses extends Component {
                         </div>
                     </div>
                 </div>
-
             </div >
         )
     }

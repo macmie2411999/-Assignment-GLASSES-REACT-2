@@ -1,78 +1,81 @@
-.background{
-    background: url(../../public/glassesImage/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+.background {
+  background: url(../../public/glassesImage/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
-.image{
-    position: relative;
-    background: url(../../public/glassesImage/model.jpg);
-    background-repeat: no-repeat;
-    width: 480px;
-    height: 585px;
+.image {
+  position: relative;
+  background: url(../../public/glassesImage/model.jpg);
+  background-repeat: no-repeat;
+  width: 480px;
+  height: 585px;
 }
 
-.glass{
-    position: absolute;
-    top: 130px;
-    left: 100px;
-    width: 275px;
-    height: 100px;
-    opacity: 0.8;
+.glass {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+  width: 275px;
+  height: 100px;
+  opacity: 0.8;
 }
 
-.btn-glass{
-    border: transparent;
-    background-color: transparent;
+.btn-glass {
+  border: transparent;
+  background-color: transparent;
 }
 
-.default-model{
-    /* height: 300px; */
+.default-model {
+  /* height: 300px; */
+  /* width: 500;
+  height: 585px; */
 }
 
-.glasses-collection{
-    position: absolute;
-    z-index: 1;
-    background-color: #ffffff;
+.glasses-collection {
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
 }
 
-/* .list-glasses-rendered{
-    background-color: #ffffff;
-    position: absolute;
-    height: 25%;;
-    width: 80%;
-    bottom: 0;
-    align-items: center;
-} */
-
-.detail{
-    position: absolute;
-    height: 20%;;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    background-color: rgba(163, 109, 7, 0.711);
-    opacity: 0.8;
+.list-glasses-rendered {
+  background-color: #fff;
+  /* position: absolute; */
+  /* height: 45%; */
+  width: 90%;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
 }
 
-.name{
-    color: rgb(61, 4, 168);
-    font-size: 30px;
+.detail {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(163, 109, 7, 0.711);
+  opacity: 0.8;
 }
 
-.description{
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 500;
+.name {
+  color: rgb(61, 4, 168);
+  font-size: 30px;
 }
 
-.list-glasses{
-    background-color: #ffffff;
-    position: absolute;
-    height: 25%;;
-    width: 80%;
-    bottom: 0;
-    align-items: center;
+.description {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
 }
 
+.list-glasses {
+  background-color: #ffffff;
+  position: absolute;
+  height: 25%;
+  width: 80%;
+  bottom: 0;
+  align-items: center;
+}
